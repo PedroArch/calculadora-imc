@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Calculadora IMC</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="mainHeader" class="center">Calculadora de IMC</h1>
+      <h5 id="descriptionHeader" class="center">
+        Calcule seu índice de massa corporal
+      </h5>
+        <div class="row inputDiv">
+          <div class="input-field col s5">
+            <input id="heightInput" type="number" class="validate" step="0.01"value="1.70">
+            <label for="heightInput">Altura(m)</label>
+          </div>
+          <div class="input-field col s5">
+            <input id="weightInput" type="number" class="validate" step="1" value="70">
+            <label for="weightInput">Peso(kg)</label>
+          </div>
+          <div id="buttonCalcDiv" class="input-field col s2">
+            <button id="buttonCalc" class="btn waves-effect waves-light large" type="submit" name="action">Calcular</button>
+          </div>
+        </div>
+        <div id="resultCard"class="card small">
+          <div class="container">
+          <h2 id="headerCard">Seu resultado</h2>
+          <span id="resultDescription">descrição do resultado</span>
+          <div id="sourceDiv">
+            <span>Fonte: </span><a href="https://www.unimedfortaleza.com.br/blog/cuidar-de-voce/como-calcular-imc#:~:text=O%20c%C3%A1lculo%20do%20IMC%20%C3%A9,%C3%A9%20o%20seu%20peso%20ideal"> Unimed Fortaleza</a>
+          </div>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
